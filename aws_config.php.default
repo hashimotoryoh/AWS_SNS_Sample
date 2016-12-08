@@ -1,0 +1,7 @@
+<?php
+
+define(AWS_REGION, 'AWSのリージョン');
+
+define(AWS_ACCESS_KEY, 'アクセスキー');
+define(AWS_SECRET_KEY, 'シークレットキー');
+define(AWS_APPLICATION_ARN, 'アプリケーションARN');
