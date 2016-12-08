@@ -1,6 +1,11 @@
 # Mac OS X
 .DS_Store
 
+# Cocoapods
+Podfile.lock
+Pods/
+AWS_SNS_Sample.xcworkspace
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
