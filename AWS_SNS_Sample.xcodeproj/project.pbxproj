@@ -25,6 +25,7 @@
 		BF94E6841DF95E78001E3ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF94E6861DF95E78001E3ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF94E68C1DF961CC001E3ABD /* AWS_SNS_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_SNS_Sample.entitlements; sourceTree = "<group>"; };
+		BF94E68D1DF965C5001E3ABD /* AWS_SDK_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWS_SDK_Bridging_Header.h; sourceTree = "<group>"; };
 		D251A4D50D0E05E911F23C5B /* Pods-AWS_SNS_Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS_SNS_Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWS_SNS_Sample/Pods-AWS_SNS_Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		F04CF50A22B695E61D4AF51A /* Pods-AWS_SNS_Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS_SNS_Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWS_SNS_Sample/Pods-AWS_SNS_Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +87,7 @@
 				BF94E6811DF95E78001E3ABD /* Assets.xcassets */,
 				BF94E6831DF95E78001E3ABD /* LaunchScreen.storyboard */,
 				BF94E6861DF95E78001E3ABD /* Info.plist */,
+				BF94E68D1DF965C5001E3ABD /* AWS_SDK_Bridging_Header.h */,
 			);
 			path = AWS_SNS_Sample;
 			sourceTree = "<group>";
@@ -353,6 +355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hashimotoryoh.sample.AWS-SNS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AWS_SDK_Bridging_Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -368,6 +371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hashimotoryoh.sample.AWS-SNS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AWS_SDK_Bridging_Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
