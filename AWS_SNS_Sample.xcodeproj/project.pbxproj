@@ -24,6 +24,7 @@
 		BF94E6811DF95E78001E3ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF94E6841DF95E78001E3ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF94E6861DF95E78001E3ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF94E68C1DF961CC001E3ABD /* AWS_SNS_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWS_SNS_Sample.entitlements; sourceTree = "<group>"; };
 		D251A4D50D0E05E911F23C5B /* Pods-AWS_SNS_Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS_SNS_Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWS_SNS_Sample/Pods-AWS_SNS_Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		F04CF50A22B695E61D4AF51A /* Pods-AWS_SNS_Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS_SNS_Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWS_SNS_Sample/Pods-AWS_SNS_Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +79,7 @@
 		BF94E6791DF95E78001E3ABD /* AWS_SNS_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				BF94E68C1DF961CC001E3ABD /* AWS_SNS_Sample.entitlements */,
 				BF94E67A1DF95E78001E3ABD /* AppDelegate.swift */,
 				BF94E67C1DF95E78001E3ABD /* ViewController.swift */,
 				BF94E67E1DF95E78001E3ABD /* Main.storyboard */,
@@ -123,7 +125,16 @@
 				TargetAttributes = {
 					BF94E6761DF95E78001E3ABD = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AJXGP38B7W;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -336,7 +347,8 @@
 			baseConfigurationReference = D251A4D50D0E05E911F23C5B /* Pods-AWS_SNS_Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = AWS_SNS_Sample/AWS_SNS_Sample.entitlements;
+				DEVELOPMENT_TEAM = AJXGP38B7W;
 				INFOPLIST_FILE = AWS_SNS_Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hashimotoryoh.sample.AWS-SNS-Sample";
@@ -350,7 +362,8 @@
 			baseConfigurationReference = F04CF50A22B695E61D4AF51A /* Pods-AWS_SNS_Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = AWS_SNS_Sample/AWS_SNS_Sample.entitlements;
+				DEVELOPMENT_TEAM = AJXGP38B7W;
 				INFOPLIST_FILE = AWS_SNS_Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hashimotoryoh.sample.AWS-SNS-Sample";
