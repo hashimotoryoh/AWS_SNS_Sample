@@ -73,6 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AWSCredentialsProvider {
                     .trimmingCharacters(in: CharacterSet.init(charactersIn: "\"\""))
                 print(endpointArn)
                 UserDefaults.standard.set(endpointArn, forKey: "endpointArn")
+                
+                self.window?.rootViewController?.loadView()
+                self.window?.rootViewController?.viewDidLoad()
             }
             else {
                 print(error ?? "A")

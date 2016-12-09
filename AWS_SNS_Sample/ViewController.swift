@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var _deviceTokenLabel: UILabel!
+    @IBOutlet weak var _endpointArnLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        _deviceTokenLabel.text = UserDefaults.standard.string(forKey: "deviceToken")
+        _endpointArnLabel.text = UserDefaults.standard.string(forKey: "endpointArn")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
