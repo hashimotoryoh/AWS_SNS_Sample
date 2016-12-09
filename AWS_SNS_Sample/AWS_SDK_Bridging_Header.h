@@ -10,5 +10,6 @@
 #define AWS_SDK_Bridging_Header_h
 
 #import <AWSSNS/AWSSNS.h>
+#import "AWSConfig.h"
 
 #endif /* AWS_SDK_Bridging_Header_h */
