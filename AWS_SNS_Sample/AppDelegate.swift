@@ -74,8 +74,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AWSCredentialsProvider {
                 print(endpointArn)
                 UserDefaults.standard.set(endpointArn, forKey: "endpointArn")
                 
-                self.window?.rootViewController?.loadView()
-                self.window?.rootViewController?.viewDidLoad()
+                DispatchQueue.main.async {
+                    self.window?.rootViewController?.viewDidLoad()
+                }
             }
             else {
                 print(error ?? "A")

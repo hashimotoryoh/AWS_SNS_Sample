@@ -10,15 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var _deviceTokenLabel: UILabel!
-    @IBOutlet weak var _endpointArnLabel: UILabel!
-    
+    @IBOutlet weak var _deviceTokenField: UITextField!
+    @IBOutlet weak var _endpointArnField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        _deviceTokenLabel.text = UserDefaults.standard.string(forKey: "deviceToken")
-        _endpointArnLabel.text = UserDefaults.standard.string(forKey: "endpointArn")
+        _deviceTokenField.text = UserDefaults.standard.string(forKey: "deviceToken")
+        _endpointArnField.text = UserDefaults.standard.string(forKey: "endpointArn")
     }
 
     override func didReceiveMemoryWarning() {
