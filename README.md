@@ -3,8 +3,9 @@
 ちょっと違うけど、参考URL: http://qiita.com/ijun/items/2cbff7664e49fb93bf39
 
 ```shell
-# clone this repository
+# clone this repository & change branch
 $ git clone https://github.com/hashimotoryoh/AWS_SNS_Sample.git
+$ git checkout ios/swift
 
 # install aws sdk for obj-c
 # podコマンドのインストール方法は別途調べてください
@@ -14,4 +15,3 @@ $ pod install
 # Open AWS_SNS_Sample.xcworkspace
 $ open -a "Xcode" AWS_SNS_Sample.xcworkspace
 ```
-
